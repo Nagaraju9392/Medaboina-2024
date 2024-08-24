@@ -1,0 +1,29 @@
+Java conditional statement programmes
+import java.util.*;
+class HelloWorld {
+    public static void main(String args[]){
+    System.out.println("enter the income tax amount");
+    Scanner cp=new Scanner(System.in);
+    int tax=cp.nextInt();
+    float income,total;
+  //  double total;
+    if(tax<=5){
+        System.out.print(" zero charges in tax " +tax);
+    } else if(tax>5 && tax<=10){
+        System.out.println("tax have charge " +tax );
+       income=(float)(tax*0.7);
+       System.out.println("charge of tax is "+ income);
+       total=tax+income;
+       System.out.println("total amount of tax "+total);
+    }
+    else {
+         System.out.println("tax have charge " +tax );
+       income=(float)(tax*0.9);
+       System.out.println("charge of tax is "+ income);
+       total=tax+income;
+       System.out.println("total amount of tax "+total);
+        
+    }
+    }
+   
+}
