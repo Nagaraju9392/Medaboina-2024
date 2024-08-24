@@ -28,3 +28,31 @@ class HelloWorld {
    
 }
 the frst java program was end
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner cp=new Scanner (System.in);
+        System.out.println("enter a value ");
+    int  a=cp.nextInt();
+         System.out.println("enter b value ");
+        int b=cp.nextInt();
+         System.out.println("enter c value ");
+        int c=cp.nextInt();
+        double result=(b*b)-(4*a*c);
+        double re=2*a;
+       // System.out.print(result); 
+        if (b<a){
+            double r1=(-b+Math.pow(result,0.5))/(re);
+            System.out.println("enter the r1 "+r1);
+        }
+        else {
+            double  r2=(-b-Math.pow(result,0.5))/(re);
+            System.out.println("enter the r1 "+r2);
+            
+        }
+    
+       
+    }
+}
+
